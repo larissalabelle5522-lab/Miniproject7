@@ -55,9 +55,75 @@ body {
 button { 
     border-radius:2px;
     box-sizing:20px;
-    color:black;
+    color:bold black;
     background:white;
     border-radius:15px;
     justify-content: center;
     display:block;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+nav ul button {
+    flex-direction:column;
+    align-items:center;
+    transition: 1%;
+}
+
+hr {
+    border-color:transparent;
+
+}
+
+#artwork {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:30px;
+}
+
+.artwork-card {
+    flex:1 1 50%;
+    padding:32px;
+    border-radius:15px;
+    background-color:white;
+    box-shadow:black;
+    flex-wrap:wrap;
+    width:50%;
+    min-width:0;
+    max-width:300px;
+    height:auto;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+.artwork-card img {
+    width:50%;
+    height:auto;
+    flex:1 1 50%;
+    object-position: center;
+    min-width:0;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.artwork-card h3 {
+    font-size:22px;
+}
+
+.artwork-card figcaption {
+    font-size:16px;
+}
+
+.artwork-card button {
+    padding:10px 20px;
+    margin:10px auto;
+    border:none;
+    border-radius:15px;
+    background-color:white;
+    color:black;
+    cursor:pointer;
+    border-color:black;
 }

@@ -11,7 +11,7 @@
 <header>
     <section>
             <nav>
-                <a class="card" href="index.html">Homepage</a>
+                <button onclick="window.location.href='index.html'">Homepage</a>
             </nav>
         </div>
     </section>
@@ -21,35 +21,48 @@
         <h1>Artworks</h1>
         <!-- artworks here -->
          
-        <h3 id="artwork-card">Picnic Table</h3>
-        
-         <figure>
-            <img src="./images/IMG_1950.JPG" alt="Pinic Table" style="width: 250px; height:auto">
-            <figcaption>The piece was created with oil pastles and shows the joy of a delicious treat out and about.</figcaption>
-            <p>Price: $60.00</p>
-        </figure>
 
+        <div class="artwork-card">
+            <h3>Picnic Table</h3>
+            
+            <figure>
+                <img src="./images/picnic.jpeg" alt="Pinic Table" style="width: 250px; height:auto">
+                <button>Learn More</button>
+                <figcaption>The piece was created with oil pastles and shows the joy of a delicious treat out and about.</figcaption>
+                <p>Price: $60.00</p>
+            </figure>
 
-        <h2 id="artwork-card">Abstract Sun Conure</h2>
-        
-        <figure>
-            <img src="./images/IMG_5968.JPG" alt="Abstact Sun Conure" style="width:250px; height:auto">
-            <figcaption>Made using color pencils and love, as it is a piece made from my pet from a long while ago that has now passed.<br>
-            If you want a pet portrait for yourself contact me.</figcaption>
-            <p>Not for Sale</p>
-        </figure>
+        </div>
+
+        <div class="artwork-card">
+            <h2>Abstract Sun Conure</h2>
+            
+            <figure>
+                <img src="./images/petPortrait.jpeg" alt="Abstact Sun Conure" style="width:250px; height:auto">
+                <button>Learn More</button>
+                <figcaption>Made using color pencils and love, as it is a piece made from my pet from a long while ago that has now passed.<br>
+                If you want a pet portrait for yourself contact me.</figcaption>
+                <p>Image is only an example. You have to send in your own pet portrait</p>
+                <p class="price">Depends on pet contact me to discuss pricing.</p>
+            </figure>
+        </div>
         
         <hr>
 
-        <h2 id="artwork-card">Custom SketchBook Covers</h2>
-        
-        <figure>
-            <img src="./images/VRDH4461.JPG" alt="Custom Journal Cover" style="width:250px; height:auto">
-            <figcaption>Send in your ideas and images for a custom journals.</figcaption>
-            <p>Price Range:$30.00-$50.00</p>
-        </figure>
+        <div class="artwork-card">
+            <h2>Custom SketchBook Covers</h2>
+            
+            <figure>
+                <img src="./images/sketchBook.jpeg" alt="Custom Journal Cover" style="width:250px; height:auto">
+                <button>Learn More</button>
+                <figcaption>Send in your ideas and images for a custom journals.</figcaption>
+                <p>Price Range:$30.00-$50.00</p>
+            </figure>
+        </div>
         
         <hr>
+
+        <button onclick="window.location.href='form.html'"></button>
 
         <section class="#contact">
 
