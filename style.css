@@ -54,13 +54,16 @@ body {
 }
 
 button { 
-    border-radius:2px;
-    box-sizing:20px;
-    color:bold black;
-    background:white;
+    align-items:center;
+    transition: 0.3s;
+    padding:10px 20px;
+    margin:10px auto;
+    border:none;
     border-radius:15px;
-    justify-content: center;
-    display:block;
+    background-color:white;
+    color:black;
+    cursor:pointer;
+    border-color:black;
     font-family:Arial, Helvetica, sans-serif;
     
 }
@@ -70,7 +73,16 @@ button {
 nav ul button {
     flex-direction:column;
     align-items:center;
-    transition: 1%;
+    transition: 0.3s;
+    padding:10px 20px;
+    margin:10px auto;
+    border:none;
+    border-radius:15px;
+    background-color:white;
+    color:black;
+    cursor:pointer;
+    border-color:black;
+    
 }
 
 hr {
@@ -139,19 +151,65 @@ hr {
     border-color:black;
 }
 
-filters {
+.search-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    padding:25px;
+    margin:20px auto;
+}
+
+#artSearch {
+    width:320px;
+    max-width:100%;
+    padding:13px 18px;
+    border:2px solid black;
+    border-radius:25px;
+    font-size:16px;
+    outline:none;
+    background-color:white;
+    transition:0.3;
+}
+
+#artSearch:focus {
+    border-color: #8ed2c1;
+    box-shadow:0 0 8px grey;
+}
+
+#searchBtn,
+#clearSearch {
+    padding: 13px 22px;
+    border:none;
+    border-radius:25px;
+    background-color:white;
+    color:black;
+    font-size:15px;
+    font-weight: bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#searchBtn:hover,
+#clearSearch:hover {
+    background-color:#8ed2c1;
+    transform: translateY(-2px)
+}
+
+#filters {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 12px 0 30px;
 }
 
-filters button {
+#filters button {
     padding:10px 17px;
-    border: 1px solid #8ed2c1;
+    border: 1px solid black;
     border-radius: 30px;
     background:white;
-    color:#8ed2c1;
+    color:black;
     font-size:0.85rem;
     font-weight: 700;
     cursor:pointer;
@@ -164,9 +222,17 @@ filters button {
 }
 
 .filters button.active {
-    background:#8ed2c1;
-    border-color:#8ed2c1;
+    background:white;
+    border-color:black;
     color:black
+}
+
+#searchMessage {
+    width:100%;
+    text-align:center;
+    color:black;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 @media (max-width: 760px) {
