@@ -44,6 +44,59 @@ body {
     padding:0;
     background-color:#5d6185;
 }
+aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+aside img {
+    width: 45%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+aside .description {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+aside .price {
+    font-weight: bold;
+}
+
+
+
+span {
+    font-weight:bold;
+}
+
+
+.artwork-card-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.artwork-card-link:hover .artwork-card {
+    transform: translateY(-5px);
+}
+
 
 .logo {
     width:150px;
@@ -245,5 +298,20 @@ hr {
 @media (max-width: 520px) {
     #artwork {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    aside {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside img {
+        width: 100% !important;
+    }
+
+    aside .description {
+        text-align: center;
     }
 }
