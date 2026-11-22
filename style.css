@@ -54,6 +54,7 @@ body {
 }
 
 button { 
+
     align-items:center;
     transition: 0.3s;
     padding:10px 20px;

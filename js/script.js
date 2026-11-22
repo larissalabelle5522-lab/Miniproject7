@@ -6,7 +6,8 @@ const artworks = [
         title: "Picnic Table",
         image: "./images/picnic.jpeg",
         description: "Created with oil pastels.",
-        price: "$60.00"
+        price: "$60.00",
+        link:"cards/picnicTable"
     },
     {
         title: "Abstract Sun Conure",
@@ -18,25 +19,29 @@ const artworks = [
         title: "Custom Sketchbook Covers",
         image: "./images/sketchBook.jpeg",
         description: "Custom journals made from your ideas.",
-        price: "$30-$50"
+        price: "$30-$50",
+        link:"cards/sketchBookCover"
     },
     {
         title: "Floral Paintings",
         image: "./images/painting.png",
         description: "Paintings inspired by flowers.",
-        price: "$50-$60"
+        price: "$50-$60",
+        link:"floralPainting"
     },
     {
         title: "Watercolor Paintings",
         image: "./images/IMG_6078.jpeg",
         description: "Watercolor artwork from pets to still lifes.",
-        price: "$40-$50"
+        price: "$40-$50",
+        link:"cards/waterColorPaintings"
     },
     {
         title: "Abstract Art",
         image: "./images/IMG_7207.jpeg",
         description: "Shapes, colors, and patterns create a unique design.",
-        price: "$20-$40"
+        price: "$20-$40",
+        
     }
 ];
 
