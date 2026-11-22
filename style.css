@@ -139,6 +139,36 @@ hr {
     border-color:black;
 }
 
+filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 30px;
+}
+
+filters button {
+    padding:10px 17px;
+    border: 1px solid #8ed2c1;
+    border-radius: 30px;
+    background:white;
+    color:#8ed2c1;
+    font-size:0.85rem;
+    font-weight: 700;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+.filters button:hover {
+    border-color:#8ed2c1;
+    color:#a7e0d0;
+}
+
+.filters button.active {
+    background:#8ed2c1;
+    border-color:#8ed2c1;
+    color:black
+}
+
 @media (max-width: 760px) {
     #artwork {
         grid-template-columns: repeat(2, minmax(220px, 1fr));

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ArtDweller</title>
     <link rel="stylesheet" href="style.css">
-    <script src=".js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
     <main>           
@@ -28,12 +28,12 @@
                     <nav>
                         <ul>
                             
-                                <button onclick="window.location.href='project.html#artwork'">Artwork</button>
+                                <button onclick="window.location.href='#artwork'">Artwork</button>
                                 <p>Explore my collection.</p>
                             
 
                             
-                                <button onclick="window.location.href='project.html#contact'">Contact</button>
+                                <button onclick="window.location.href='#contact'">Contact</button>
                                 <p>Contact us and fill out our form to order!</p>
                             
                         </ul>
@@ -79,4 +79,134 @@
         </p>
         </main>
     </body>
+
+<header>
+    <h1>Artworks</h1>
+        <section>
+                <nav>
+                    <ul>
+                         <button onclick="window.location.href='index.html'">Homepage</a>
+                    </ul>
+                </nav>
+        </section>
+
+        <div class="search-container">
+            <input type="text" id="artSearch" placeholder="Search for artwork you want made...">
+            <button type="button" id="searchBtn">Submit</button>
+            <button type="button" id="clearSearch">Clear</button>
+            <p id="searchMessage" aria-live="polite"></p>
+        </div>
+
+        <nav>
+            <div class="filters" id="filters">
+                <button class="active" data-category="All">All Art</button>
+                <button data-category="paintings">Paintings</button>
+                <button data-category="bookcovers">Sketch Book Cover</button>
+                <button data-category="mixed-media">Mixed Media Options</button>
+            </div>
+        </nav>
+</header>
+    
+    
+<body>
+    <section id="artwork">
+        
+
+        <!-- artworks here -->
+         
+
+        <div class="artwork-card">
+            <h3>Picnic Table</h3>
+            
+            <figure>
+                <img src="./images/picnic.jpeg" alt="Picnic Table">
+                <figcaption>The piece was created with oil pastles and shows the joy of a delicious treat out and about.</figcaption>
+                <p class="price">Price: $60.00</p>
+            </figure>
+
+        </div>
+
+        <div class="artwork-card">
+            <h2>Abstract Sun Conure</h2>
+            
+            <figure>
+                <img src="./images/petPortrait.jpeg" alt="Abstract Sun Conure">
+                <figcaption>Made using color pencils and love, as it is a piece made from my pet from a long while ago that has now passed.<br>
+                If you want a pet portrait for yourself contact me.</figcaption>
+                <p>Image is only an example. You have to send in your own pet portrait</p>
+                <p class="price">Depends on pet contact me to discuss pricing.</p>
+            </figure>
+        </div>
+        
+        <div class="artwork-card">
+            <h2>Custom SketchBook Covers</h2>
+            
+            <figure>
+                <img src="./images/sketchBook.jpeg" alt="Custom Journal Cover">
+                <figcaption>Send in your ideas and images for a custom journals.</figcaption>
+                <p class="price">Price Range:$30.00-$50.00</p>
+            </figure>
+        </div>
+
+        <div class="artwork-card">
+            <h2>Floral Paintings</h2>
+
+            <figure>
+            <img src="images/painting.png" alt="Floral painting">
+                <figcaption>Floral Paintings are something many people like to brighten up their houses and show the beauties of the world. </figcaption>
+                <p class="price">Price Range: $50.00-$60.00</p>
+            </figure>
+
+        </div>
+
+        <div class="artwork-card">
+            <h2>Water-Color Paintings</h2>
+
+            <figure>
+                <img src="images/IMG_6078.jpeg" alt="Water-color painting">
+                <figcaption>The watercolor paintings will range from pets to still-lifes.</figcaption>
+                <p class="price">Price Range:$40.00-$50.00</p>
+            </figure>
+        </div>
+
+        <div class="artwork-card">
+            <h2>Abstract Art</h2>
+
+            <figure>
+                <img src="images/IMG_7207.jpeg" alt="Abstract art">
+                <p class="price">Price Range:$20.00-$40.00</p>
+            </figure>
+        </div>
+</body>
+        
+
+        <button onclick="window.location.href='form.html'">Contact Form</button>
+
+     <section>
+
+        <h3>Contact</h3>
+    
+        <address>
+            Contact us at <a href="mailto:larissalabelle5522@gmail.com">larissalabelle5522@gmail.com</a>
+            <p>Hours:<br>
+                Monday-Friday<br>
+                From 3PM-9PM Eastern Time
+            </p>
+            
+            <h4>Address Avaliability</h4>
+                <p>Have to be in the United States for a delivery.</p>
+
+
+        </address>
+
+        <address>
+            Call us<a href="tel:848-245-5522">848-245-5522</a>
+        </address>
+
+    </section>
+
+    <footer>
+        <p><small>Copyright &copy; 2026 ArtDweller</small></p>
+    </footer>
+</header>
 </html>
